@@ -110,11 +110,71 @@ In this section, I will describe the mechanical design of the robot, including t
 
 By using SolidWorks, I was able to accurately measure and fit all components, ensuring that everything was properly aligned and functional. The toolbox feature in SolidWorks was particularly useful for planning the hardware requirements and visualizing the final assembly.
 
-
 # Electronics
 
-##  Circuit Diagram
+## Overview
+
+In this section, I will describe the electronics used in the project. I utilized Wokwi to present the schematic in a more legible and understandable format for anyone. Proteus was primarily used to visualize the PCB design and its 3D model, which helped in understanding how the soldering would look and in planning the components layout.
+
+## Circuit Diagram
+
+I used Wokwi to create a clear and easy-to-understand schematic diagram. Below is the schematic created using Wokwi:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa456a7a-35cf-47c7-a003-72cface94aaa" alt="Circuit Diagram" width="600"/>
+  <br />
+  <i>Wokwi connection diagram</i>
+</p>
+
 ## Wiring Details
+
+The following details explain the purpose of each color used in the wiring connections:
+
+- 🔴 **Red**: Represents 3.3V from the ESP32S.
+- ⚫ **Black**: Represents GND.
+- 🔵 **Blue**: Represents the microstep pins (MS1, MS2, MS3) of the A4988 stepper motor drivers.
+- 🟢 **Light Green**: Represents signals from the ESP32 to control motor steps and direction (STEP and DIR pins of the A4988).
+- 🌲 **Dark Green**: Represents a bridge connection.
+- 🌫️ **Gray**: Represents the stepper motor coils 1A, 1B, 2A, 2B.
+- 🟦 **Cyan**: Represents the I2C communication for the MPU6050.
+- 🟠 **Orange**: Represents the power supply (9V, up to 35V).
+- 🌸 **Magenta**: Represents 5V from the 7805 voltage regulator.
+
+## PCB Creation with Proteus
+
+Proteus was used for creating the PCB and its 3D model. Due to the lack of some components in Proteus's default libraries, I had to create many components from scratch. This software allowed me to design the PCB layout and visualize it in 3D before finalizing the design.
+
+Here are the images of the PCB design and its 3D model:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/79096ccc-3fa6-4492-ac77-cbdbe538e71b" alt="PCB Design" width="600"/>
+  <br />
+  <i>PCB Design</i>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/44c0c4b2-4772-419c-98cc-3821e84b6755" alt="3D PCB Model" width="600"/>
+  <br />
+  <i>3D PCB Model</i>
+</p>
+
+## Actual PCB Board
+
+Below are images of the actual PCB board, showing both the top and bottom sides after soldering:
+
+<p align="center">
+  <img src="URL_DE_LA_IMAGEN_DEL_PCB_SUPERIOR" alt="PCB Top Side" width="600"/>
+  <br />
+  <i>PCB Top Side</i>
+</p>
+
+<p align="center">
+  <img src="URL_DE_LA_IMAGEN_DEL_PCB_INFERIOR" alt="PCB Bottom Side" width="600"/>
+  <br />
+  <i>PCB Bottom Side</i>
+</p>
+
+To simplify the circuit, I used fewer wires by implementing solder paths between components on the bottom side of the PCB. On the top side, I utilized jumper wires to make connections more straightforward.
 
 # Firmware and Software
 
