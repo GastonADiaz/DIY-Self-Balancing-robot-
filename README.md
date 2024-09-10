@@ -66,10 +66,51 @@
 | Wokwi                | I used Wokwi to create and simulate electronic schematics and code, with the added benefit of simulating without needing physical connections. |
 | Arduino IDE          | I used Arduino IDE to write and upload the code to the ESP32S microcontroller. |
 
-# Mechanical Design
 
-##  Description of the Mechanical Structure
-## CAD Drawings or Diagrams
+## Mechanical Design
+
+In this section, I will describe the mechanical design of the robot, including the 3D printed parts and the overall assembly. The designs were created using SolidWorks 2021, which allowed me to visualize the dimensions needed and plan the hardware required, such as screws and other components. The toolbox in SolidWorks also helped in determining the quantity of parts needed and in assembling the pieces to see how everything fits together.
+
+### 3D Printed Parts
+
+- **Image 1**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/35c78bf3-f76d-4250-b9da-80598849e8c8" alt="Image 1" width="300" />
+  </p>  
+  This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
+
+- **Image 2**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/1ba8db90-4b60-4c7e-983f-6352d15cbbc4"alt="Image 2" width="300" />
+  </p>  
+  This piece functions similarly to metal brackets for NEMA 17 motors. However, by printing it, we reduce costs while maintaining the same efficiency for our project. It also includes 2 extra holes compared to standard brackets, allowing for more secure mounting with up to 6 screws.
+
+- **Image 3**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/329a52f9-5e00-43ab-9c70-090f463529dc" alt="Image 3" width="300" />
+  </p>  
+  This part includes 4 holes for the 8mm threaded rod and 4 additional holes to mount the electronic board. It serves as a key component in securing the electronics in place.
+
+- **Image 4**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/3ee3df82-ac13-4035-ba25-cf51f8f19bed" alt="Image 4" width="300" />
+  </p>  
+  This piece is designed to be the top of the robot’s structure. It has 4 holes for the 8mm threaded rod and is a simple yet essential part of the assembly, providing the top support for the robot.
+
+- **Image 5**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/faa2bd36-064a-4dc6-b487-238db89fe1aa" alt="Image 5" width="300" />
+  </p>  
+  These are the wheel designs used for the robot. Initially, another type of wheel was planned (visible in the SolidWorks files), but this design was chosen for better performance and suitability for the project.
+
+- **Image 6**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/bb6f93f4-b620-439c-8791-9fb99ded0409" alt="Image 6" width="500" />
+  </p>  
+  This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
+
+By using SolidWorks, I was able to accurately measure and fit all components, ensuring that everything was properly aligned and functional. The toolbox feature in SolidWorks was particularly useful for planning the hardware requirements and visualizing the final assembly.
+
 
 # Electronics
 
