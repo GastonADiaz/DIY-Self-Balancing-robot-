@@ -74,7 +74,7 @@ In this section, I will describe the mechanical design of the robot, including t
 
 - **Base plate of the structure**  
   <p align="center">
-    <img src="https://github.com/user-attachments/assets/35c78bf3-f76d-4250-b9da-80598849e8c8" alt="Image 1" width="300" style="border: 20px solid #a215e8;/>
+    <img src="https://github.com/user-attachments/assets/35c78bf3-f76d-4250-b9da-80598849e8c8" alt="Image 1" width="300" style="border: 20px solid #a215e8/>
   </p>  
   This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
 
