@@ -14,7 +14,7 @@
   - 🧩[Key Code Sections](#key-code-sections)
   - 🔄[PID Control Explanation](#pid-control-explanation)
    - ⚙️[Calibration Procedures](#calibration-procedures)
-- 🛠️[Troubleshooting](#troubleshooting)
+- :exclamation:[Troubleshooting](#troubleshooting)
   - ⚠️[Common Issues and Solutions](#common-issues-and-solutions)
 - 🔮[Future Improvements](#future-improvements)
   - 🔧[Potential Add-ons](#potential-add-ons)
