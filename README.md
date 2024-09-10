@@ -39,7 +39,7 @@
 | 1        | MPU6050                                           | Gyroscope and accelerometer module               |
 | 2        | A4988 Drivers                                    | Stepper motor drivers                            |
 | 1        | ESP32S                                            | Microcontroller                                  |
-| 1        | 7805 Voltage Regulator                            | Regulates voltage to 5V                          |
+| 1        | 7805T Voltage Regulator                            | Regulates voltage to 5V                          |
 | 1        | 9V to 12V Power                            | Battery or power supply                          |
 | 1        | On/Off Switch                                     | Power switch                                     |
 | 8        | Male Pins                                         | For connecting stepper motor coils to the drivers |
