@@ -109,7 +109,6 @@ In this section, I will describe the mechanical design of the robot, including t
   This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
 
 By using SolidWorks, I was able to accurately measure and fit all components, ensuring that everything was properly aligned and functional. The toolbox feature in SolidWorks was particularly useful for planning the hardware requirements and visualizing the final assembly.
-
 # Electronics
 
 ## Overview
@@ -130,19 +129,19 @@ I used Wokwi to create a clear and easy-to-understand schematic diagram. Below i
 
 The following details explain the purpose of each color used in the wiring connections:
 
-- 🔴 **Red**: Represents 3.3V from the ESP32S.
+- 🔴 **Red**: Represents 3.3V output pin from the ESP32S.
 - ⚫ **Black**: Represents GND.
 - 🔵 **Blue**: Represents the microstep pins (MS1, MS2, MS3) of the A4988 stepper motor drivers.
-- 🟢 **Light Green**: Represents signals from the ESP32 to control motor steps and direction (STEP and DIR pins of the A4988).
+- 🟢 **Light Green**: Represents signals from the ESP32 to control motors steps and direction (STEP and DIR pins of the A4988).
 - 🌲 **Dark Green**: Represents a bridge connection.
-- 🌫️ **Gray**: Represents the stepper motor coils 1A, 1B, 2A, 2B.
+- 🌫️ **Gray**: Represents the stepper motors coils 1A, 1B, 2A, 2B.
 - 🟦 **Cyan**: Represents the I2C communication for the MPU6050.
 - 🟠 **Orange**: Represents the power supply (9V, up to 35V).
-- 🌸 **Magenta**: Represents 5V from the 7805 voltage regulator.
+- 🌸 **Magenta**: Represents 5V output from the 7805 voltage regulator.
 
 ## PCB Creation with Proteus
 
-Proteus was used for creating the PCB and its 3D model. Due to the lack of some components in Proteus's default libraries, I had to create many components from scratch. This software allowed me to design the PCB layout and visualize it in 3D before finalizing the design.
+Proteus was used for creating the PCB and its 3D model. Due to the lack of some components in Proteus's default libraries, I had to create many components from scratch. This software allowed me to design the PCB layout and visualize it in 3D before finalizing the design. The red traces represent the top layer of the PCB, and the blue traces represent the bottom layer. Proteus also provided the dimensions of the PCB and the distances between centers, which were crucial for the final assembly.
 
 Here are the images of the PCB design and its 3D model:
 
