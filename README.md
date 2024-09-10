@@ -141,7 +141,7 @@ The following details explain the purpose of each color used in the wiring conne
 
 ## PCB Creation with Proteus
 
-Proteus was used for creating the PCB and its 3D model. Due to the lack of some components in Proteus's default libraries, I had to create many components from scratch. This software allowed me to design the PCB layout and visualize it in 3D before finalizing the design. The red traces represent the top layer of the PCB, and the blue traces represent the bottom layer. Proteus also provided the dimensions of the PCB and the distances between centers, which were crucial for the final assembly.
+Proteus was used for creating the PCB and its 3D model. Due to the lack of some components in Proteus's default libraries, I had to create many components from scratch. This software allowed me to design the PCB layout and visualize it in 3D before finalizing the design. The red welding paths represent the top layer of the PCB, and the blue welding paths represent the bottom layer. Proteus also provided the dimensions of the PCB and the distances between centers, which were crucial for the final assembly. Feel free to ask if you need any more modifications!
 
 Here are the images of the PCB design and its 3D model:
 
@@ -150,6 +150,8 @@ Here are the images of the PCB design and its 3D model:
   <br />
   <i>PCB Design</i>
 </p>
+
+Proteus provides us with the PCB format in 3D, using the IGES format. This file can then be visualized and used in SolidWorks.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/44c0c4b2-4772-419c-98cc-3821e84b6755" alt="3D PCB Model" width="600"/>
