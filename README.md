@@ -108,7 +108,6 @@ In this section, I will describe the mechanical design of the robot, including t
   </p>  
   This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
 
-By using SolidWorks, I was able to accurately measure and fit all components, ensuring that everything was properly aligned and functional. The toolbox feature in SolidWorks was particularly useful for planning the hardware requirements and visualizing the final assembly.
 # Electronics
 
 ## Overview
