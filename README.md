@@ -120,8 +120,7 @@ In this section, I will describe the mechanical design of the robot, including t
   <p align="center">
     <img src="https://github.com/user-attachments/assets/a50d0d55-f8ac-41e0-94cb-aa32e9416485" alt="Image 7" width="500" />
   </p>  
-  The wiring is not there, so it looks better aesthetically.
-
+  The wiring is not visible, which improves the aesthetic appearance. (That is, the switch, the battery, and the motor wires).
 
 # Electronics
 
