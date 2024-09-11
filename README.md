@@ -30,6 +30,10 @@ This project addresses the challenge of constructing a balancing robot that main
 
 The central objective of this project is to implement a balance control system that allows the robot to remain upright by itself. To achieve this, the system uses feedback provided by the MPU6050 sensor, which measures the tilt angle or "roll angle". Through a closed-loop control system with a PID (Proportional, Integral, and Derivative) controller, the robot adjusts the motor speeds based on the measured angle, thereby correcting any deviations and minimizing the balance error. This approach allows the robot to dynamically adapt to variations and maintain its stability effectively.
 
+## Balancing robot working in real life
+
+![Video del robot en al vida real](URL)
+
 # Components Used
 
 ## List of Hardware Components
