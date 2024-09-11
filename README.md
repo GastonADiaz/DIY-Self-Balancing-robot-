@@ -26,6 +26,10 @@
 
 ## Overview and Objective
 
+This project addresses the challenge of constructing a balancing robot that maintains its stability in an upright position with two wheels. The robot is based on a series of components, including Nema 17 stepper motors, A4988 motor drivers, and an MPU6050 gyro-accelerometer sensor, all managed by an ESP32S microcontroller.
+
+The central objective of this project is to implement a balance control system that allows the robot to remain upright by itself. To achieve this, the system uses feedback provided by the MPU6050 sensor, which measures the tilt angle or "roll angle". Through a closed-loop control system with a PID (Proportional, Integral, and Derivative) controller, the robot adjusts the motor speeds based on the measured angle, thereby correcting any deviations and minimizing the balance error. This approach allows the robot to dynamically adapt to variations and maintain its stability effectively.
+
 # Components Used
 
 ## List of Hardware Components
