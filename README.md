@@ -194,3 +194,21 @@ To simplify the circuit, I used fewer wires by implementing solder paths between
 ## Related Work and Resources
 
 # Acknowledgments
+
+I would like to extend my sincere gratitude to several individuals and organization for this project
+
+- **Guillermo Daniel Duarte**: A special thank you to my colleague for his invaluable assistance and support throughout this project. Your help was crucial to its completion.
+
+- **Professor Cristian Leandro Lukasiewicz**: I am deeply grateful to Professor Lukasiewicz for overseeing our Supervised Professional Practice (PPS) and providing guidance and support throughout the process.
+
+- **National University of Lomas de Zamora, Faculty of Engineering**: for opening the doors to a rich academic environment that has allowed me to pursue my studies and acquire valuable knowledge.
+
+- **To all readers**: I hope you find this project both interesting and useful.
+
+![Logo facultad con color](https://github.com/user-attachments/assets/e53a8451-da3c-4043-81e9-76fe114df523)
+
+<div align="center">
+
+<b><i>Best regards, and have a great day!</i></b>
+
+</div>
