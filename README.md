@@ -116,6 +116,13 @@ In this section, I will describe the mechanical design of the robot, including t
   </p>  
   This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
 
+- **Assembly of the balancing robot in real life**  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/a50d0d55-f8ac-41e0-94cb-aa32e9416485" alt="Image 7" width="500" />
+  </p>  
+  The wiring is not there, so it looks better aesthetically.
+
+
 # Electronics
 
 ## Overview
