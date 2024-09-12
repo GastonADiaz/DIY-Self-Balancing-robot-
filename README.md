@@ -159,7 +159,7 @@ Proteus was used for creating the PCB and its 3D model. Due to the lack of some 
 Here are the images of the PCB design and its 3D model:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/79096ccc-3fa6-4492-ac77-cbdbe538e71b" alt="PCB Design" width="600"/>
+  <img src="https://github.com/user-attachments/assets/79096ccc-3fa6-4492-ac77-cbdbe538e71b" alt="PCB Design" width="500"/>
   <br />
   <i>PCB Design</i>
 </p>
@@ -167,7 +167,7 @@ Here are the images of the PCB design and its 3D model:
 Proteus provides us with the PCB format in 3D, using the IGES format. This file can be visualized and used in SolidWorks.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/44c0c4b2-4772-419c-98cc-3821e84b6755" alt="3D PCB Model" width="600"/>
+  <img src="https://github.com/user-attachments/assets/44c0c4b2-4772-419c-98cc-3821e84b6755" alt="3D PCB Model" width="500"/>
   <br />
   <i>3D PCB Model</i>
 </p>
@@ -177,18 +177,20 @@ Proteus provides us with the PCB format in 3D, using the IGES format. This file 
 Below are images of the actual PCB board, showing both the top and bottom sides after soldering:
 
 <p align="center">
-  <img src="URL_DE_LA_IMAGEN_DEL_PCB_SUPERIOR" alt="PCB Top Side" width="600"/>
+  <img src="https://github.com/user-attachments/assets/5d0efb57-b90c-4437-b425-606e10ea5f66" alt="PCB Top Side" width="300"/>
   <br />
   <i>PCB Top Side</i>
 </p>
 
 <p align="center">
-  <img src="URL_DE_LA_IMAGEN_DEL_PCB_INFERIOR" alt="PCB Bottom Side" width="600"/>
+  <img src="https://github.com/user-attachments/assets/f5e66837-b46d-4049-ab97-5ef159dcb5b5" alt="PCB Bottom Side" width="300"/>
   <br />
   <i>PCB Bottom Side</i>
 </p>
 
 To simplify the circuit, I used fewer wires by implementing solder paths between components on the bottom side of the PCB. On the top side, I utilized jumper wires to make connections more straightforward.
+<br />
+The bottom part didn't turn out so well, since the solder paths are too close together, but the important thing is that it works well.
 
 # Firmware and Software
 
