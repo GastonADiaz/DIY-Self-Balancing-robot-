@@ -195,7 +195,6 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 # Firmware and Software
 
 ## Key Code Sections
-# PID Controller Explanation for the Balancing Robot
 
 # PID Controller Explanation for the Balancing Robot
 
@@ -207,15 +206,15 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 
 ## Explanation of the Diagram
 
-**Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, it's to keep the roll angle at 0° for the balancing robot.
+**Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, I want to keep the roll angle at 0° for the balancing robot.
 
-**Error \[ e(t) \]:** This is the difference between the desired value (setpoint) and the value measured at the current moment. It is calculated as:
+**Error \( e(t) \):** This is the difference between the desired value (setpoint) and the value measured at the current moment. I calculate it as:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8e19f12b-d797-4c35-a1e8-8c9fc2ff4ff8" alt="Error e(t)" width="400"/>
   <br />
 </p>
 
-**PID Controller:** This controller adjusts the control signal based on the error \[ e(t) \] and consists of three components:
+**PID Controller:** This controller adjusts the control signal based on the error \( e(t) \) and consists of three components:
 - **Proportional (P):** This depends on the current value of the error. If the error is large, the proportional action will be large.
 - **Integral (I):** This depends on the accumulation of error over time. If the error persists, the integral action will increase to eliminate the residual error.
 - **Derivative (D):** This depends on the rate of change of the error. If the error is changing rapidly, the derivative action will adjust to prevent overshoot.
@@ -228,38 +227,38 @@ The output of the PID controller is a combination of these three actions:
 
 **Nema 17 Motors:** These motors receive the control signal adjusted by the PID and adjust the rotational speed to try to bring the roll angle to the desired value.
 
-**Measured Value:** This is the current measurement of the system. In our case, it's the roll angle measured by the MPU6050 sensor.
+**Measured Value:** This is the current measurement of the system. In my case, it's the roll angle measured by the MPU6050 sensor.
 
-**Feedback:** The measured roll angle is fed back to the PID controller, which calculates the new error and adjusts the control signal accordingly. This process is repeated continuously to keep the system at the desired value.
+**Feedback:** I feed the measured roll angle back to the PID controller, which calculates the new error and adjusts the control signal accordingly. I repeat this process continuously to keep the system at the desired value.
 
 ## Operating Cycle
 
 The entire cycle works as follows:
-1. The system measures the current roll angle (Measured Value) using the MPU6050.
-2. The error \[ e(t) \] between the desired angle (Setpoint) and the measured angle is calculated.
+1. I measure the current roll angle (Measured Value) using the MPU6050.
+2. I calculate the error \( e(t) \) between the desired angle (Setpoint) and the measured angle.
 3. The PID controller adjusts the control signal based on the current error, accumulated error, and its rate of change.
-4. The adjusted control signal is sent to the Nema 17 motors to correct the roll angle.
+4. I send the adjusted control signal to the Nema 17 motors to correct the roll angle.
 5. The motors change the position, and the MPU6050 sensor measures the angle again, and the cycle repeats.
 
 ## Calculation of Error Derivative and Integral
 
-**Error Derivative:** To solve the derivative of the error using finite differences:
+**Error Derivative:** To calculate the derivative of the error using finite differences:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1d80682a-84ac-4dd7-aeaf-7163dce9d125" alt="Error Derivative" width="250"/>
   <br />
 </p>
-where ( Δt ) is the time between each sample:
+where \( \Delta t \) is the time between each sample:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b9df8ebd-d527-4c52-b9a0-78cb418e4f08" alt="Delta t for Derivative" width="250"/>
   <br />
 </p>
 
-**Error Integral:** The integral of the error is summed at each interval over time, accumulating the error:
+**Error Integral:** I sum the integral of the error at each interval over time, accumulating the error:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fa2fc768-635d-4ee3-8184-2891e846149c" alt="Error Integral" width="250"/>
   <br />
 </p>
-The current integral is calculated as:
+I calculate the integral as:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/30b46d2e-977b-4d35-9758-673d9ecb2a6c" alt="Current Integral Calculation" width="500"/>
   <br />
