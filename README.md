@@ -193,8 +193,9 @@ To simplify the circuit, I used fewer wires by implementing solder paths between
 # Firmware and Software
 
 ## Key Code Sections
-## PID Control Explanation
-###  Calibration Procedures
+
+# PID Control Explanation
+##  Calibration Procedures
 
 # Troubleshooting
 
