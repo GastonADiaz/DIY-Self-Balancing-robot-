@@ -208,7 +208,9 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 
 **Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, I want to keep the roll angle at 0° for the balancing robot.
 
-**Error \[ e(t) \]:** This is the difference between the desired value (setpoint) and the value measured at the current moment. I calculate it as:
+**Error \[ e(t) \]:** This is the difference between the desired value (setpoint) and the value measured at the current moment.
+<br />
+I calculate it as:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8e19f12b-d797-4c35-a1e8-8c9fc2ff4ff8" alt="Error e(t)" width="400"/>
   <br />
@@ -224,6 +226,7 @@ The output of the PID controller is a combination of these three actions:
   <img src="https://github.com/user-attachments/assets/ede1709f-e9bb-47e2-9d30-48fe14708ab0" alt="PID Output" width="700"/>
   <br />
 </p>
+Kp, Ki and Kd are the gains received by the proportional, integral and derivative part.<br /><br />
 
 **Nema 17 Motors:** These motors receive the control signal adjusted by the PID and adjust the rotational speed to try to bring the roll angle to the desired value.
 
@@ -240,7 +243,7 @@ The entire cycle works as follows:
 4. I send the adjusted control signal to the Nema 17 motors to correct the roll angle.
 5. The motors change the position, and the MPU6050 sensor measures the angle again, and the cycle repeats.
 
-## Calculation of Error Derivative and Integral
+## Calculations 
 
 **Error Derivative:** To calculate the derivative of the error using finite differences:
 <p align="center">
@@ -253,11 +256,13 @@ where [ Δt ] is the time between each sample:
   <br />
 </p>
 
-**Error Integral:** I sum the integral of the error at each interval over time, accumulating the error:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fa2fc768-635d-4ee3-8184-2891e846149c" alt="Error Integral" width="250"/>
   <br />
 </p>
+
+**Error Integral:** I sum the integral of the error at each interval over time, accumulating the error.
+<br />
 I calculate the integral as:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/30b46d2e-977b-4d35-9758-673d9ecb2a6c" alt="Current Integral Calculation" width="500"/>
