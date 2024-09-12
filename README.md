@@ -193,8 +193,59 @@ To simplify the circuit, I used fewer wires by implementing solder paths between
 # Firmware and Software
 
 ## Key Code Sections
+# PID Controller Explanation for the Balancing Robot
 
-# PID Control Explanation
+![Closed-Loop Diagram of the System with PID](path/to/your/image.png)
+
+## Explanation of the Diagram
+
+**Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, it's to keep the roll angle at 0° for the balancing robot.
+
+**Error \( e(t) \):** This is the difference between the desired value (setpoint) and the value measured at the current moment. It is calculated as:
+\[ e(t) = \text{Desired Value} - \text{Measured Value} \]
+
+**PID Controller:** This controller adjusts the control signal based on the error \( e(t) \) and consists of three components:
+- **Proportional (P):** This depends on the current value of the error. If the error is large, the proportional action will be large.
+- **Integral (I):** This depends on the accumulation of error over time. If the error persists, the integral action will increase to eliminate the residual error.
+- **Derivative (D):** This depends on the rate of change of the error. If the error is changing rapidly, the derivative action will adjust to prevent overshoot.
+
+The output of the PID controller is a combination of these three actions:
+\[ \text{PID Output} = K_p \cdot e(t) + K_i \cdot \int e(t) \, dt + K_d \cdot \frac{d e(t)}{dt} \]
+where \( K_p \), \( K_i \), and \( K_d \) are the proportional, integral, and derivative gains, respectively.
+
+**Nema 17 Motors:** These motors receive the control signal adjusted by the PID and adjust the rotational speed to try to bring the roll angle to the desired value.
+
+**Measured Value:** This is the current measurement of the system. In our case, it's the roll angle measured by the MPU6050 sensor.
+
+**MPU6050 Sensor:** This sensor measures the roll angle and provides this information back to the system. The reading from this sensor is crucial for determining how much the system is deviating from the setpoint.
+
+**Feedback:** The measured roll angle is fed back to the PID controller, which calculates the new error and adjusts the control signal accordingly. This process is repeated continuously to keep the system at the desired value.
+
+## Operating Cycle
+
+The entire cycle works as follows:
+1. The system measures the current roll angle (Measured Value) using the MPU6050.
+2. The error \( e(t) \) between the desired angle (Setpoint) and the measured angle is calculated.
+3. The PID controller adjusts the control signal based on the current error, accumulated error, and its rate of change.
+4. The adjusted control signal is sent to the Nema 17 motors to correct the roll angle.
+5. The motors change the position, and the MPU6050 sensor measures the angle again, and the cycle repeats.
+
+## Calculation of Error Derivative and Integral
+
+**Error Derivative:**
+To solve the derivative of the error using finite differences:
+\[ \frac{d e(t)}{dt} = \frac{e(t) - e(t - \Delta t)}{\Delta t} \]
+where \( \Delta t \) is the time between each sample:
+\[ \frac{d e(t)}{dt} = \frac{e_{\text{current}} - e_{\text{past}}}{\Delta t} \]
+and
+\[ \Delta t = t_{\text{current}} - t_{\text{previous}} \]
+
+**Error Integral:**
+The integral of the error is summed at each interval over time, accumulating the error:
+\[ \int e(t) \, dt \]
+The current integral is calculated as:
+\[ \text{Current Integral} = \text{Previous Integral} + e(t) \cdot \Delta t \]
+
 ##  Calibration Procedures
 
 # Troubleshooting
