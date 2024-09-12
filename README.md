@@ -197,7 +197,11 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 ## Key Code Sections
 # PID Controller Explanation for the Balancing Robot
 
-![Closed-Loop Diagram of the System with PID](path/to/your/image.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3392fff0-e7d1-4bbc-ac39-50386cd3f5bc" alt="PCB Design" width="800"/>
+  <br />
+  <i>Closed loop control</i>
+</p>
 
 ## Explanation of the Diagram
 
