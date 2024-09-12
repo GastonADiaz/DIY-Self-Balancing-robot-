@@ -197,10 +197,12 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 ## Key Code Sections
 # PID Controller Explanation for the Balancing Robot
 
+# PID Controller Explanation for the Balancing Robot
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3392fff0-e7d1-4bbc-ac39-50386cd3f5bc" alt="PCB Design" width="800"/>
+  <img src="https://github.com/user-attachments/assets/d0d2d64f-d56f-4ac9-8e9b-93eef6e6527b" alt="Closed-Loop Diagram of the System with PID" width="800"/>
   <br />
-  <i>Closed loop control</i>
+  <i>Closed-Loop Diagram of the System with PID</i>
 </p>
 
 ## Explanation of the Diagram
@@ -208,7 +210,11 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 **Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, it's to keep the roll angle at 0° for the balancing robot.
 
 **Error \( e(t) \):** This is the difference between the desired value (setpoint) and the value measured at the current moment. It is calculated as:
-\[ e(t) = \text{Desired Value} - \text{Measured Value} \]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8e19f12b-d797-4c35-a1e8-8c9fc2ff4ff8" alt="Error e(t)" width="400"/>
+  <br />
+  <i>Error e(t)</i>
+</p>
 
 **PID Controller:** This controller adjusts the control signal based on the error \( e(t) \) and consists of three components:
 - **Proportional (P):** This depends on the current value of the error. If the error is large, the proportional action will be large.
@@ -216,8 +222,11 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 - **Derivative (D):** This depends on the rate of change of the error. If the error is changing rapidly, the derivative action will adjust to prevent overshoot.
 
 The output of the PID controller is a combination of these three actions:
-\[ \text{PID Output} = K_p \cdot e(t) + K_i \cdot \int e(t) \, dt + K_d \cdot \frac{d e(t)}{dt} \]
-where \( K_p \), \( K_i \), and \( K_d \) are the proportional, integral, and derivative gains, respectively.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ede1709f-e9bb-47e2-9d30-48fe14708ab0" alt="PID Output" width="700"/>
+  <br />
+  <i>PID Output</i>
+</p>
 
 **Nema 17 Motors:** These motors receive the control signal adjusted by the PID and adjust the rotational speed to try to bring the roll angle to the desired value.
 
@@ -238,21 +247,32 @@ The entire cycle works as follows:
 
 ## Calculation of Error Derivative and Integral
 
-**Error Derivative:**
-To solve the derivative of the error using finite differences:
-\[ \frac{d e(t)}{dt} = \frac{e(t) - e(t - \Delta t)}{\Delta t} \]
+**Error Derivative:** To solve the derivative of the error using finite differences:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1d80682a-84ac-4dd7-aeaf-7163dce9d125" alt="Error Derivative" width="250"/>
+  <br />
+  <i>Error Derivative</i>
+</p>
 where \( \Delta t \) is the time between each sample:
-\[ \frac{d e(t)}{dt} = \frac{e_{\text{current}} - e_{\text{past}}}{\Delta t} \]
-and
-\[ \Delta t = t_{\text{current}} - t_{\text{previous}} \]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b9df8ebd-d527-4c52-b9a0-78cb418e4f08" alt="Delta t for Derivative" width="250"/>
+  <br />
+  <i>Delta t for Derivative</i>
+</p>
 
-**Error Integral:**
-The integral of the error is summed at each interval over time, accumulating the error:
-\[ \int e(t) \, dt \]
+**Error Integral:** The integral of the error is summed at each interval over time, accumulating the error:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa2fc768-635d-4ee3-8184-2891e846149c" alt="Error Integral" width="250"/>
+  <br />
+  <i>Error Integral</i>
+</p>
 The current integral is calculated as:
-\[ \text{Current Integral} = \text{Previous Integral} + e(t) \cdot \Delta t \]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/30b46d2e-977b-4d35-9758-673d9ecb2a6c" alt="Current Integral Calculation" width="500"/>
+  <br />
+</p>
 
-##  Calibration Procedures
+## Calibration Procedures
 
 # Troubleshooting
 
