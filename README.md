@@ -208,13 +208,13 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 
 **Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, I want to keep the roll angle at 0° for the balancing robot.
 
-**Error \( e(t) \):** This is the difference between the desired value (setpoint) and the value measured at the current moment. I calculate it as:
+**Error \[ e(t) \]:** This is the difference between the desired value (setpoint) and the value measured at the current moment. I calculate it as:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8e19f12b-d797-4c35-a1e8-8c9fc2ff4ff8" alt="Error e(t)" width="400"/>
   <br />
 </p>
 
-**PID Controller:** This controller adjusts the control signal based on the error \( e(t) \) and consists of three components:
+**PID Controller:** This controller adjusts the control signal based on the error \[ e(t) \] and consists of three components:
 - **Proportional (P):** This depends on the current value of the error. If the error is large, the proportional action will be large.
 - **Integral (I):** This depends on the accumulation of error over time. If the error persists, the integral action will increase to eliminate the residual error.
 - **Derivative (D):** This depends on the rate of change of the error. If the error is changing rapidly, the derivative action will adjust to prevent overshoot.
@@ -235,7 +235,7 @@ The output of the PID controller is a combination of these three actions:
 
 The entire cycle works as follows:
 1. I measure the current roll angle (Measured Value) using the MPU6050.
-2. I calculate the error \( e(t) \) between the desired angle (Setpoint) and the measured angle.
+2. I calculate the error \[ e(t) \] between the desired angle (Setpoint) and the measured angle.
 3. The PID controller adjusts the control signal based on the current error, accumulated error, and its rate of change.
 4. I send the adjusted control signal to the Nema 17 motors to correct the roll angle.
 5. The motors change the position, and the MPU6050 sensor measures the angle again, and the cycle repeats.
@@ -247,7 +247,7 @@ The entire cycle works as follows:
   <img src="https://github.com/user-attachments/assets/1d80682a-84ac-4dd7-aeaf-7163dce9d125" alt="Error Derivative" width="250"/>
   <br />
 </p>
-where \( \Delta t \) is the time between each sample:
+where \[ Δt \] is the time between each sample:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b9df8ebd-d527-4c52-b9a0-78cb418e4f08" alt="Delta t for Derivative" width="250"/>
   <br />
