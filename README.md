@@ -213,7 +213,6 @@ The bottom part didn't turn out so well, since the solder paths are too close to
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8e19f12b-d797-4c35-a1e8-8c9fc2ff4ff8" alt="Error e(t)" width="400"/>
   <br />
-  <i>Error e(t)</i>
 </p>
 
 **PID Controller:** This controller adjusts the control signal based on the error \( e(t) \) and consists of three components:
@@ -225,7 +224,6 @@ The output of the PID controller is a combination of these three actions:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ede1709f-e9bb-47e2-9d30-48fe14708ab0" alt="PID Output" width="700"/>
   <br />
-  <i>PID Output</i>
 </p>
 
 **Nema 17 Motors:** These motors receive the control signal adjusted by the PID and adjust the rotational speed to try to bring the roll angle to the desired value.
@@ -251,20 +249,17 @@ The entire cycle works as follows:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1d80682a-84ac-4dd7-aeaf-7163dce9d125" alt="Error Derivative" width="250"/>
   <br />
-  <i>Error Derivative</i>
 </p>
 where \( \Delta t \) is the time between each sample:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b9df8ebd-d527-4c52-b9a0-78cb418e4f08" alt="Delta t for Derivative" width="250"/>
   <br />
-  <i>Delta t for Derivative</i>
 </p>
 
 **Error Integral:** The integral of the error is summed at each interval over time, accumulating the error:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fa2fc768-635d-4ee3-8184-2891e846149c" alt="Error Integral" width="250"/>
   <br />
-  <i>Error Integral</i>
 </p>
 The current integral is calculated as:
 <p align="center">
