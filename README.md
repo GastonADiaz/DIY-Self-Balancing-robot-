@@ -247,7 +247,7 @@ The entire cycle works as follows:
   <img src="https://github.com/user-attachments/assets/1d80682a-84ac-4dd7-aeaf-7163dce9d125" alt="Error Derivative" width="250"/>
   <br />
 </p>
-where \[ Δt \] is the time between each sample:
+where [ Δt ] is the time between each sample:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b9df8ebd-d527-4c52-b9a0-78cb418e4f08" alt="Delta t for Derivative" width="250"/>
   <br />
