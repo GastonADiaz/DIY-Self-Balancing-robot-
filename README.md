@@ -275,12 +275,64 @@ I calculate the integral as:
 
 ##  Common Issues and Solutions
 
+**1. Wheel Slipperiness:**
+   
+One of the main challenges encountered in this project was related to the wheels. The 3D-printed wheels were very slippery on certain surfaces, such as ceramic and wood.
+
+Solution:
+To enhance grip and friction, we added strips of EVA rubber around the entire perimeter of the wheels. This significantly improved the wheel's traction on slippery surfaces.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cdbac65d-0ae3-4329-a908-35c7331d9e8d" width="800"/>
+  <br />
+  <i>wheels with eva rubber</i>
+</p>
+
+**2. Wheel Attachment Stability:**
+   
+Another issue with the wheels was that the screws used to attach them were insufficient. Over time, vibrations from the motor caused the screws to loosen and come out.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d6155298-deed-40aa-9031-5f9497a1d47d" width="300"/>
+  <br />
+  <i>After a long time, the wheels would gradually come off due to the vibrations of the engines.</i>
+</p>
+
+Solution:
+To resolve this, we applied adhesive to secure the axle parts. This greatly improved stability, and the wheels no longer detached.
+
+**3. MPU6050 Drift:**
+   
+We also faced challenges with the MPU6050 sensor, which exhibited drift in the angle measurements.
+
+Solution:
+By using accelerometer data instead of gyroscope data, we were able to calculate drift-free angles through trigonometric calculations.
+
+**4. Sensor Noise:**
+   
+The sensor produced noisy readings due to vibrations of the motors.
+
+Solution:
+To mitigate this noise, I implemented a Kalman filter, which effectively smoothed the signals.
+
+<p align="center">
+  <img src="" alt="Angles measured without using a filter" width="800"/>
+  <br />
+  <i>Angles measured without using a filter</i>
+</p>
+<p align="center">
+  <img src="" alt="Angles measured with a Kalman filter" width="800"/>
+  <br />
+  <i>Angles measured with a Kalman filter</i>
+</p>
+
 # Future Improvements
 
 ##  Potential Add-ons
 
 # Bibliography
-## Related Work and Resources
+
+All the references used in the development of this project will be compiled in a text file, which will include all the links we utilized as guides throughout the process.
 
 # Acknowledgments
 
