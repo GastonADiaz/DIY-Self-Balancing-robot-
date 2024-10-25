@@ -40,8 +40,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 
 # Components Used
 
-## List of Hardware Components
-
+## List of Components
 
 | Quantity | Component                                         | Description                                       |
 |----------|---------------------------------------------------|---------------------------------------------------|
@@ -50,32 +49,46 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 | 2        | NEMA 17 Stepper Motors                            | Motor type used for the robot                    |
 | 1        | MPU6050                                           | Gyroscope and accelerometer module               |
 | 2        | A4988 Drivers                                    | Stepper motor drivers                            |
-| 1        | ESP32S                                            | Microcontroller                                  |
+| 1        | ATmega328p (Arduino Nano)                        | Microcontroller                                  |
 | 1        | 7805T Voltage Regulator                            | Regulates voltage to 5V                          |
-| 1        | 9V to 12V Power                            | Battery or power supply                          |
+| 1        | 9V to 12V Power                                  | Rechargeable battery or power supply              |
 | 1        | On/Off Switch                                     | Power switch                                     |
-| 8        | Male Pins                                         | For connecting stepper motor coils to the drivers |
-| 80       | Female Pins                                       | For connecting various components                |
-| 1        | 2-Pin Terminal Block                              | For power connection                           |
+| 13       | Male Pins                                         | For connecting stepper motor coils to the drivers and LEDs |
+| 80       | Female Pins                                       | For connecting various components                 |
+| 1        | 2-Pin Terminal Block                              | For power connection                             |
 | 2        | Heat Sinks                                        | For cooling the A4988 drivers                    |
-| 2        | 100µF Capacitors                                  | 16V capacitors                                    |
-| 2        | 220µF Capacitors                                  | 16V capacitors                                    |
+| 2        | 100µF Capacitors                                  | 16V capacitors                                   |
+| 2        | 220µF Capacitors                                  | 16V capacitors                                   |
 | 8        | XH2.54 Connectors                                 | 2 connectors with 4 pins and 2 connectors with 6 pins for stepper motor wiring |
 | 1        | 1 Meter M8 Threaded Rod                           | For structural support                           |
 | 24       | M8 Hex Nuts                                       | For threaded rod connections                     |
 | 12       | M4 Hex Nuts                                       | For securing components to the structure         |
-| 12       | M4 Phillips Head Bolts (13mm)                     | For mounting motor supports and electronics board      |
-| 8        | M3 Phillips Head Bolts (8mm)                      | For securing stepper motor mounts |
+| 12       | M4 Phillips Head Bolts (13mm)                    | For mounting motor supports and electronics board |
+| 8        | M3 Phillips Head Bolts (8mm)                     | For securing stepper motor mounts                |
 | 2        | GND and Vin Cables                                | Power supply cables for the entire circuit       |
+| 1        | HC-05 Bluetooth Module                            | For mobile application control                    |
+| 10        | Heat Shrink Tubing                               | For soldering and joining wires                   |
+| 4       | Cable Ties                                        | For securing cables                               |
+
+## Principal Tools
+
+| Quantity | Tool                   | Description                         |
+|----------|------------------------|-------------------------------------|
+| 1        | Soldering Iron         | For soldering connections           |
+| 1        | Desoldering Pump       | For removing solder                 |
+| 1        | Multimeter (Tester)    | For measuring voltage and continuity |
+| 1        | Solder wire                | For making electrical joints        |
+| 1        | Screwdriver            | For fastening screws                |
 
 ## List of Software Tools
 
 | Software             | Description                                                                                              |
 |----------------------|----------------------------------------------------------------------------------------------------------|
 | SolidWorks 2021      | I used SolidWorks 2021 to design the 3D printed parts, model various components, and utilize its toolbox for bolts, nuts, etc. |
-| Proteus 8 Professional | I used Proteus 8 Professional for creating electronic schematics, designing the PCB layout, and generating a 3D model of the PCB. |
 | Wokwi                | I used Wokwi to create and simulate electronic schematics and code, with the added benefit of simulating without needing physical connections. |
-| Arduino IDE          | I used Arduino IDE to write and upload the code to the ESP32S microcontroller. |
+| Arduino IDE          | I used Arduino IDE to write and upload the code to the ATmega328p microcontroller.                      |
+| Easy Eda Designer    | I used Easy Eda Designer for PCB creation and electronic schematics, as it is a very tidy software for designing PCBs. It allows exporting traces for PCB milling or sending the Gerber file for manufacturing. |
+| EZ-GUI Ground Station | I used the EZ-GUI Ground Station APK for mobile control of the robot, allowing manipulation through a joystick interface. |
 
 
 ## Mechanical Design
@@ -119,12 +132,6 @@ In this section, I will describe the mechanical design of the robot, including t
     <img src="https://github.com/user-attachments/assets/bb6f93f4-b620-439c-8791-9fb99ded0409" alt="Image 6" width="500" />
   </p>  
   This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
-
-- **Assembly of the balancing robot in real life**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/a50d0d55-f8ac-41e0-94cb-aa32e9416485" alt="Image 7" width="500" />
-  </p>  
-  The wiring is not visible, which improves the aesthetic appearance. (That is, the switch, the battery, and the motor wires).
 
 # Electronics
 
