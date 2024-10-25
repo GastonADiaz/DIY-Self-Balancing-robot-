@@ -26,9 +26,13 @@
 
 ## Overview and Objective
 
-This project addresses the challenge of constructing a balancing robot that maintains its stability in an upright position with two wheels. The robot is based on a series of components, including Nema 17 stepper motors, A4988 motor drivers, and an MPU6050 gyro-accelerometer sensor, all managed by an ATmega328p microcontroller.
+This project addresses the challenge of building a self-balancing robot that maintains its stability in an upright position using two wheels. The robot is based on a series of components, including Nema 17 stepper motors, A4988 motor drivers, an MPU6050 gyro-accelerometer sensor, and an HC-05 Bluetooth module, all managed by an ATmega328p microcontroller.
 
-The central objective of this project is to implement a balance control system that allows the robot to remain upright by itself. To achieve this, the system uses feedback provided by the MPU6050 sensor, which measures the tilt angle or "roll angle". Through a closed-loop control system with a PID (Proportional, Integral, and Derivative) controller, the robot adjusts the motor speeds based on the measured angle, thereby correcting any deviations and minimizing the balance error. This approach allows the robot to dynamically adapt to variations and maintain its stability effectively.
+Additionally, the project incorporates control of the robot via a mobile application. We use the EZ-GUI Ground Station app, typically employed for drones, but we utilize it to manipulate the self-balancing robot through a joystick interface and make custom configurations.
+
+The central objective of this project is to implement a balance control system that allows the robot to remain upright on its own. To achieve this, the system utilizes feedback from the MPU6050 sensor, which measures the tilt angle or "pitch angle." Through a closed-loop control system with a PID (Proportional, Integral, and Derivative) controller, the robot adjusts motor speeds based on the measured angle, correcting any deviations and minimizing balance error. This approach enables the robot to dynamically adapt to variations and effectively maintain its stability.
+
+We would also like to acknowledge the firmware "BalancingWii," which significantly assisted in the development of this project.
 
 ## Balancing robot working in real life
 
