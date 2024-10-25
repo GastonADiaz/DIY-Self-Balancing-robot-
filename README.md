@@ -44,7 +44,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 
 | Quantity | Component                                         | Description                                       |
 |----------|---------------------------------------------------|---------------------------------------------------|
-| 7        | 3D Printed Parts                                  | 2 wheels, 2 NEMA 17 motor mounts, 3 general structure parts |
+| 7        | 3D Printed Parts                                  | 2 wheels, 2 NEMA 17 motor mounts, 3 general structure parts, 4 light diffusers |
 | 1        | Perforated Board                                  | For electronics mounting                          |
 | 2        | NEMA 17 Stepper Motors                            | Motor type used for the robot                    |
 | 1        | MPU6050                                           | Gyroscope and accelerometer module               |
@@ -67,8 +67,11 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 | 8        | M3 Phillips Head Bolts (8mm)                     | For securing stepper motor mounts                |
 | 2        | GND and Vin Cables                                | Power supply cables for the entire circuit       |
 | 1        | HC-05 Bluetooth Module                            | For mobile application control                    |
-| 10        | Heat Shrink Tubing                               | For soldering and joining wires                   |
-| 4       | Cable Ties                                        | For securing cables                               |
+| 10       | Heat Shrink Tubing                                | For soldering and joining wires                   |
+| 4        | Green LEDs                                        | For indicating status                             |
+| 4        | 220Ω Resistors                                    | For current limiting on the LEDs                  |
+| 3        | 1kΩ Resistors                                     | For voltage division to provide 3.3V to the RX pin of the HC-05 |
+| 4        | Cable Ties                                        | For securing cables                               |
 
 ## Principal Tools
 
