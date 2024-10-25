@@ -104,10 +104,11 @@ In this section, I will describe the mechanical design of the robot, including t
 
 ### 3D Printed Parts
 
-1. **Base Plate of the Structure**This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
+1. **Base Plate of the Structure**<br />
+  This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
 
-2. **Support for the NEMA 17 Stepper Motors**<br />  
-   This piece functions similarly to metal brackets for NEMA 17 motors. However, by printing it, we reduce costs while maintaining the same efficiency for our project. It also includes 2 extra holes compared to standard brackets, allowing for more secure mounting with up to 6 screws.
+2. **Support for the NEMA 17 Stepper Motors**<br />
+  This piece functions similarly to metal brackets for NEMA 17 motors. However, by printing it, we reduce costs while maintaining the same efficiency for our project. It also includes 2 extra holes compared to standard brackets, allowing for more secure mounting with up to 6 screws.
 
 3. **Central Plate of the Structure**<br />
    This part includes 4 holes for the 8mm threaded rod and 4 additional holes to mount the electronic board. It serves as a key component in securing the electronics in place.
