@@ -98,43 +98,32 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 
 In this section, I will describe the mechanical design of the robot, including the 3D printed parts and the overall assembly. The designs were created using SolidWorks 2021, which allowed me to visualize the dimensions needed and plan the hardware required, such as screws and other components. The toolbox in SolidWorks also helped in determining the quantity of parts needed and in assembling the pieces to see how everything fits together.
 
+<p align="center">
+  <img src="URL_TO_ALL_PARTS_IMAGE" alt="All Parts" width="500"/>
+</p>
+
 ### 3D Printed Parts
 
-- **Base plate of the structure**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/35c78bf3-f76d-4250-b9da-80598849e8c8" alt="Image 1" width="300"/>
-  </p>  
-  This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
+1. **Base Plate of the Structure**  
+   This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
 
-- **Support for the nema 17 stepper motors**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/1ba8db90-4b60-4c7e-983f-6352d15cbbc4"alt="Image 2" width="300" />
-  </p>  
-  This piece functions similarly to metal brackets for NEMA 17 motors. However, by printing it, we reduce costs while maintaining the same efficiency for our project. It also includes 2 extra holes compared to standard brackets, allowing for more secure mounting with up to 6 screws.
+2. **Support for the NEMA 17 Stepper Motors**  
+   This piece functions similarly to metal brackets for NEMA 17 motors. However, by printing it, we reduce costs while maintaining the same efficiency for our project. It also includes 2 extra holes compared to standard brackets, allowing for more secure mounting with up to 6 screws.
 
-- **Central plate of the structure**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/329a52f9-5e00-43ab-9c70-090f463529dc" alt="Image 3" width="300" />
-  </p>  
-  This part includes 4 holes for the 8mm threaded rod and 4 additional holes to mount the electronic board. It serves as a key component in securing the electronics in place.
+3. **Central Plate of the Structure**  
+   This part includes 4 holes for the 8mm threaded rod and 4 additional holes to mount the electronic board. It serves as a key component in securing the electronics in place.
 
-- **Upper plate of the structure**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/3ee3df82-ac13-4035-ba25-cf51f8f19bed" alt="Image 4" width="300" />
-  </p>  
-  This piece is designed to be the top of the robot’s structure. It has 4 holes for the 8mm threaded rod and is a simple yet essential part of the assembly, providing the top support for the robot.
+4. **Upper Plate of the Structure**  
+   This piece is designed to be the top of the robot’s structure. It has 4 holes for the 8mm threaded rod and is a simple yet essential part of the assembly, providing the top support for the robot.
 
-- **Wheels**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/faa2bd36-064a-4dc6-b487-238db89fe1aa" alt="Image 5" width="300" />
-  </p>  
-  These are the wheel designs used for the robot. Initially, another type of wheel was planned (visible in the SolidWorks files), but this design was chosen for better performance and suitability for the project.
+5. **Wheels**  
+   These are the wheel designs used for the robot. Initially, another type of wheel was planned, but this design was chosen for better performance and suitability for the project.
 
-- **Assembly of the balancing robot**  
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/bb6f93f4-b620-439c-8791-9fb99ded0409" alt="Image 6" width="500" />
-  </p>  
-  This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
+6. **Light Diffusers**  
+   The light diffusers are designed to illuminate a LED and are shaped like arrows to indicate the direction of the motor wheels. When both wheels rotate clockwise, the LED will point forward, and when both wheels rotate counterclockwise, the LED will point backward.
+   
+7. **Assembly of the Balancing Robot**  
+   This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
 
 # Electronics
 
