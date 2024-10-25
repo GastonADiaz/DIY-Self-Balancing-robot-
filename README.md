@@ -104,26 +104,29 @@ In this section, I will describe the mechanical design of the robot, including t
 
 ### 3D Printed Parts
 
-1. **Base Plate of the Structure**  
-   This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
+1. **Base Plate of the Structure**This part is designed to be the base of the balancing robot. It connects with the stepper motors and features 6 holes on each side for screws to secure the NEMA 17 motor mounts. Additionally, there are 4 holes for the 8mm threaded rod that supports the structure.
 
-2. **Support for the NEMA 17 Stepper Motors**  
+2. **Support for the NEMA 17 Stepper Motors**<br />  
    This piece functions similarly to metal brackets for NEMA 17 motors. However, by printing it, we reduce costs while maintaining the same efficiency for our project. It also includes 2 extra holes compared to standard brackets, allowing for more secure mounting with up to 6 screws.
 
-3. **Central Plate of the Structure**  
+3. **Central Plate of the Structure**<br />
    This part includes 4 holes for the 8mm threaded rod and 4 additional holes to mount the electronic board. It serves as a key component in securing the electronics in place.
 
-4. **Upper Plate of the Structure**  
+4. **Upper Plate of the Structure**<br />
    This piece is designed to be the top of the robot’s structure. It has 4 holes for the 8mm threaded rod and is a simple yet essential part of the assembly, providing the top support for the robot.
-
-5. **Wheels**  
+   
+5. **Wheels** <br />
    These are the wheel designs used for the robot. Initially, another type of wheel was planned, but this design was chosen for better performance and suitability for the project.
 
 6. **Light Diffusers**  
    The light diffusers are designed to illuminate a LED and are shaped like arrows to indicate the direction of the motor wheels. When both wheels rotate clockwise, the LED will point forward, and when both wheels rotate counterclockwise, the LED will point backward.
    
-7. **Assembly of the Balancing Robot**  
+### Assembly of the Balancing Robot  
    This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
+
+<p align="center">
+  <img src="URL_TO_ALL_PARTS_IMAGE" alt="All Parts" width="500"/>  
+</p>
 
 # Electronics
 
