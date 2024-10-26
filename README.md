@@ -201,13 +201,20 @@ Finally, here is how a printed circuit board would look, both from the top and b
 - A4 - SDA
 - A5 - SCL
 
+```
+#define I2C_PULLUPS_ENABLE         PORTC |= 1<<4; PORTC |= 1<<5;   // PIN A4 & A5 (SDA & SCL)
+```
+
 ### Motor Driver Pins:
 - D5 - STEP1 (PORTD 5)
 - D6 - STEP2 (PORTD 6)
 - D7 - DIR1 (PORTD 7)
 - D8 - DIR2 (PORTB 0)
 - D4 - ENABLE (for both)
-
+  
+```
+uint8_t DRIVER_PIN[5] = {5, 6, 7, 8, 4};   // STEP1 (PORTD 5), STEP2 (PORTD 6), DIR1 (PORTD 7), DIR2 (PORTB 0), ENABLE
+```
 ## Configuration
 
 These are the optional settings you can modify for each balancing robot in the `config.h` file:
