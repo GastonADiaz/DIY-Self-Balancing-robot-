@@ -1,26 +1,31 @@
 # Table of Contents
 
-- 🗂️[Introduction](#introduction)
-  - 🎯[Overview and Objective](#overview-and-objective)
-- 🛠️[Components Used](#components-used)
-  - :page_facing_up:[List of Hardware Components](#list-of-hardware-components)
-  - 💻[List of Software Tools](#list-of-software-tools)
-- :shipit:[Mechanical Design](#mechanical-design)
-  - 🛠️[3D Printed Parts](#3D-Printed-Parts)
-- 🔌[Electronics](#electronics)
-  - 📐[Circuit Diagram](#circuit-diagram)
-  - 🔧[Wiring Details](#wiring-details)
-- 💻[Firmware and Software](#firmware-and-software)
-  - 🧩[Key Code Sections](#key-code-sections)
-  - 🔄[PID Control Explanation](#pid-control-explanation)
-   - ⚙️[Calibration Procedures](#calibration-procedures)
-- :exclamation:[Troubleshooting](#troubleshooting)
-  - ⚠️[Common Issues and Solutions](#common-issues-and-solutions)
-- 🔮[Future Improvements](#future-improvements)
-  - 🔧[Potential Add-ons](#potential-add-ons)
-- 📚[Bibliography](#bibliography)
-  - 🔍[Related Work and Resources](#related-work-and-resources)
-- 🙏[Acknowledgments](#acknowledgments)
+- 🗂️ **1.0 [Introduction](#introduction)**
+  - **1.1 [Overview and Objective](#overview-and-objective)**
+  - **1.2 [Balancing Robot Working in Real Life](#balancing-robot-working-in-real-life)**
+- 🛠️ **2.0 [Components Used](#components-used)**
+  - **2.1 [List of Components](#list-of-components)**
+  - **2.2 [Principal Tools](#principal-tools)**
+  - **2.3 [List of Software Tools](#list-of-software-tools)**
+- :shipit: **3.0 [Mechanical Design](#mechanical-design)**
+  -  **3.1 [3D Printed Parts](#3d-printed-parts)**
+- 🔌 **4.0 [Electronics](#electronics)**
+  -  **4.1 [Overview](#overview)**
+  -  **4.2 [Circuit Diagram](#circuit-diagram)**
+  -  **4.3 [Wiring Details](#wiring-details)**
+  -  **4.4 [PCB Creation with EasyEDA](#pcb-creation-with-easyeda)**
+- 💻 **5.0 [Important Code Explanations](#important-code-explanations)**
+  - **5.1 [Arduino Nano Connection Pins](#arduino-nano-connection-pins)**
+    - **5.1.1 [I2C](#i2c)**
+    - **5.1.2 [Motor Driver Pins](#motor-driver-pins)**
+  - **5.2 [Configuration](#configuration)**
+  - **5.3 [Application Configuration](#application-configuration)**
+- :exclamation: **6.0 [Troubleshooting](#troubleshooting)**
+  -  **6.1 [Common Issues and Solutions](#common-issues-and-solutions)**
+- 🔮 **7.0 [Future Improvements](#future-improvements)**
+  -  **7.1 [Potential Add-ons](#potential-add-ons)**
+- 📚 **8.0 [Bibliography](#bibliography)**
+- 🙏 **9.0 [Acknowledgments](#acknowledgments)**
 
 # Introduction
 
@@ -94,7 +99,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 | EZ-GUI Ground Station | I used the EZ-GUI Ground Station APK for mobile control of the robot, allowing manipulation through a joystick interface. |
 
 
-## Mechanical Design
+# Mechanical Design
 
 In this section, I will describe the mechanical design of the robot, including the 3D printed parts and the overall assembly. The designs were created using SolidWorks 2021, which allowed me to visualize the dimensions needed and plan the hardware required, such as screws and other components. The toolbox in SolidWorks also helped in determining the quantity of parts needed and in assembling the pieces to see how everything fits together.
 
@@ -257,6 +262,8 @@ The ISR is defined as follows:
 ISR(TIMER1_COMPA_vect) {
 }
 ```
+
+# Application Configuration
 
 # Troubleshooting
 
