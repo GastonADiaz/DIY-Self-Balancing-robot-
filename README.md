@@ -195,7 +195,7 @@ Finally, here is how a printed circuit board would look, both from the top and b
 
 # Important code explanations
 
-## Connection Pins
+## Arduino Nano Connection Pins
 
 ### I2C:
 - A4 - SDA
