@@ -135,7 +135,7 @@ In this section, I will describe the mechanical design of the robot, including t
 
 ## Overview
 
-In this section, I will describe the electronics used in the project. I utilized Wokwi to present the schematic in a more legible and understandable format for anyone. EasyEDA was primarily used to visualize the PCB design, which helped in understanding how the soldering would look and in planning the location of components
+In this section, I will describe the electronics used in the project. I utilized [Wokwi](https://wokwi.com/) to present the schematic in a more legible and understandable format for anyone. EasyEDA was primarily used to visualize the PCB design, which helped in understanding how the soldering would look and in planning the location of components
 
 ## Circuit Diagram
 
