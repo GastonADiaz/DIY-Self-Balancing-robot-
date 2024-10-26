@@ -133,7 +133,7 @@ In this section, I will describe the mechanical design of the robot, including t
 
 ## Overview
 
-In this section, I will describe the electronics used in the project. I utilized Wokwi to present the schematic in a more legible and understandable format for anyone. Proteus was primarily used to visualize the PCB design and its 3D model, which helped in understanding how the soldering would look and in planning the components layout.
+In this section, I will describe the electronics used in the project. I utilized Wokwi to present the schematic in a more legible and understandable format for anyone. EasyEDA was primarily used to visualize the PCB design, which helped in understanding how the soldering would look and in planning the location of components
 
 ## Circuit Diagram
 
@@ -159,25 +159,8 @@ The following details explain the purpose of each color used in the wiring conne
 - 🟠 **Orange**: Represents the power supply (9V, up to 35V).
 - 🌸 **Magenta**: Represents 5V output from the 7805 voltage regulator.
 
-## PCB Creation with Proteus
+## PCB Creation with EasyEDA
 
-Proteus was used for creating the PCB and its 3D model. Due to the lack of some components in Proteus's default libraries, I had to create many components from scratch. This software allowed me to design the PCB layout and visualize it in 3D before finalizing the design. The red welding paths represent the top layer of the PCB, and the blue welding paths represent the bottom layer. Proteus also provided the dimensions of the PCB and the distances between centers, which were crucial for the final assembly.
-
-Here are the images of the PCB design and its 3D model:
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/79096ccc-3fa6-4492-ac77-cbdbe538e71b" alt="PCB Design" width="500"/>
-  <br />
-  <i>PCB Design</i>
-</p>
-
-Proteus provides us with the PCB format in 3D, using the IGES format. This file can be visualized and used in SolidWorks.
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/44c0c4b2-4772-419c-98cc-3821e84b6755" alt="3D PCB Model" width="500"/>
-  <br />
-  <i>3D PCB Model</i>
-</p>
 
 ## Actual PCB Board
 
