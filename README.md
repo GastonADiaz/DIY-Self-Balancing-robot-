@@ -190,7 +190,7 @@ Finally, here is how a printed circuit board would look, both from the top and b
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a6ce2983-9f52-4f02-8786-072640b37c0d" alt="PCB_Superior_e_Inferior" width="1828"/>
   <br />
-  <i>PCB Top and Bottom View/i>
+  <i>PCB Top and Bottom View</i>
 </p>
 
 # Firmware and Software
