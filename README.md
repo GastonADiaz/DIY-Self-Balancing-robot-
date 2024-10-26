@@ -151,15 +151,17 @@ I used Wokwi to create a clear and easy-to-understand schematic diagram. Below i
 
 The following details explain the purpose of each color used in the wiring connections:
 
-- 🔴 **Red**: Represents 3.3V output pin from the ESP32S.
+- 🔴 **Red**: Represents the 5V output pin from the ATmega328p.
 - ⚫ **Black**: Represents GND.
-- 🔵 **Blue**: Represents the microstep pins (MS1, MS2, MS3) of the A4988 stepper motor drivers.
-- 🟢 **Light Green**: Represents signals from the ESP32 to control motors steps and direction (STEP and DIR pins of the A4988).
-- 🌲 **Dark Green**: Represents a bridge connection.
-- 🌫️ **Gray**: Represents the stepper motors coils 1A, 1B, 2A, 2B.
-- 🟦 **Cyan**: Represents the I2C communication for the MPU6050.
-- 🟠 **Orange**: Represents the power supply (9V, up to 35V).
-- 🌸 **Magenta**: Represents 5V output from the 7805 voltage regulator.
+- 🔵 **Blue**: Represents the microstep pins (MS1, MS2) of the A4988 stepper motor drivers.
+- 🟢 **Light Green**: Represents signals from the ATmega328p to control motor steps and direction (STEP and DIR pins of the A4988).
+- 🌲 **Dark Green**: Represents a bridge from the SLEEP and DIR pins of the A4988 driver; also used for the positive signal to the LEDs.
+- 🌫️ **Gray**: Represents the stepper motor coils (1A, 1B, 2A, 2B).
+- 🟦 **Cyan**: Represents I2C communication for the MPU6050.
+- 🟠 **Orange**: Represents the power supply (7V, up to 35V).
+- 🌸 **Magenta**: Represents 5V output from the 7805T voltage regulator.
+- 💛 **Yellow**: Represents the ENABLE pin of the A4988.
+- ⚪ **White**: Represents the RX and TX pins of the HC-05.
 
 ## PCB Creation with EasyEDA
 
