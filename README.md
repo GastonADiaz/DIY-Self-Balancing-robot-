@@ -100,6 +100,8 @@ In this section, I will describe the mechanical design of the robot, including t
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a7945219-1224-44c9-b3aa-714410899a26" alt="All Parts" width="1080"/>
+  <br />
+  <i>3D printed parts</i>
 </p>
 
 ### 3D Printed Parts
@@ -171,39 +173,25 @@ First, I used **EasyEDA Designer** to create the overall schematic, connecting t
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/369b3427-a6c5-4c78-a5b3-54cd036ac573" alt="Esquematico General" width="1356"/>
+  <br />
+  <i>Main schematic</i>
 </p>
 
-Next, we move on to the PCB creation, where we place the components' locations and the soldering paths for better organization when creating it in real life. In the following image, we can see the soldering paths from the top view 🔴 as well as the bottom view 🔵. There are also measurement dimensions in case anyone is interested in replicating it.
+Next, we move on to the PCB creation, where we place the components' locations and the soldering paths for better organization when creating it in real life. In the following image, we can see the soldering paths from the top view (Red color 🔴)  as well as the bottom view (Blue color 🔵). There are also measurement dimensions in case anyone is interested in replicating it.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/47c0d878-c64d-43a2-8a1f-1f5fe39b1686" alt="PCB Full" width="1082"/>
+  <br />
+  <i>PCB with measurements and both solder paths fused</i>
 </p>
 
 Finally, here is how a printed circuit board would look, both from the top and bottom views. I did not include 3D components because I prefer to show the silkscreen.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a6ce2983-9f52-4f02-8786-072640b37c0d" alt="PCB_Superior_e_Inferior" width="1828"/>
-</p>
-
-## Actual PCB Board
-
-Below are images of the actual PCB board, showing both the top and bottom sides after soldering:
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5d0efb57-b90c-4437-b425-606e10ea5f66" alt="PCB Top Side" width="300"/>
   <br />
-  <i>PCB Top Side</i>
+  <i>PCB Top and Bottom View/i>
 </p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f5e66837-b46d-4049-ab97-5ef159dcb5b5" alt="PCB Bottom Side" width="300"/>
-  <br />
-  <i>PCB Bottom Side</i>
-</p>
-
-To simplify the circuit, I used fewer wires by implementing solder paths between components on the bottom side of the PCB. On the top side, I utilized jumper wires to make connections more straightforward.
-<br />
-The bottom part didn't turn out so well, since the solder paths are too close together, but the important thing is that it works well.
 
 # Firmware and Software
 
