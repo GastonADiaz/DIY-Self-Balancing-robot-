@@ -285,6 +285,12 @@ By adjusting the potentiometer to approximately 1V, we found that both wheels op
   <i>Adjustment of the A4988 driver potentiometer</i>
 </p>
 
+**4. Bluetooth Module Connection During Upload:**
+
+When uploading code to the Arduino Nano, the Bluetooth module must be disconnected. This is necessary because the module uses the RX and TX pins of the Arduino for communication.
+
+**Solution:**
+When you upload code, the Arduino needs exclusive access to the RX (receive) and TX (transmit) pins to communicate with the computer. If the Bluetooth module is connected, it may interfere with this process, preventing the upload from completing successfully. To ensure a smooth upload, always disconnect the Bluetooth module before loading new code onto the Arduino Nano.
 
 # Future Improvements
 
