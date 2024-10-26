@@ -99,7 +99,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 In this section, I will describe the mechanical design of the robot, including the 3D printed parts and the overall assembly. The designs were created using SolidWorks 2021, which allowed me to visualize the dimensions needed and plan the hardware required, such as screws and other components. The toolbox in SolidWorks also helped in determining the quantity of parts needed and in assembling the pieces to see how everything fits together.
 
 <p align="center">
-  <img src="URL_TO_ALL_PARTS_IMAGE" alt="All Parts" width="500"/>
+  <img src="https://github.com/user-attachments/assets/a7945219-1224-44c9-b3aa-714410899a26" alt="All Parts" width="1080"/>
 </p>
 
 ### 3D Printed Parts
