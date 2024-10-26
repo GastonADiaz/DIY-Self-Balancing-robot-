@@ -303,6 +303,22 @@ When you upload code, the Arduino needs exclusive access to the RX (receive) and
 
 ##  Potential Add-ons
 
+
+I. **18650 Battery Power Source:**
+   Incorporating 18650 batteries as a power source could enhance the robot's mobility. In my case, I currently use a 12V power supply, as the batteries are quite expensive in my country. The batteries would allow for greater freedom of movement without the risk of cables tangling during turns.
+
+II. **Camera Integration:**
+   Adding a camera to the balancing robot would enable remote observation, as if the robot were exploring areas. This feature could facilitate mapping of environments.
+
+III. **Ultrasonic Sensor Module:**
+   Integrating an ultrasonic sensor would help the robot avoid collisions with walls or obstacles, enhancing its navigation capabilities.
+
+IV. **Improved Printed Circuit Board (PCB):**
+   While I initially used a perforated board, there are PDF files available for creating a more professional-looking PCB using either the marker or toner transfer methods. Additionally, you could consider sending the design to a manufacturer like PCBWay or other reputable providers.
+
+V. **Custom Software Development:**
+   Creating a complete application and software from scratch, without relying on existing libraries or pre-made applications, would be a significant undertaking. However, the current setup provides a solid foundation for such an endeavor.
+
 # Bibliography
 
 All the references used in the development of this project will be compiled in a text file, which will include all the links we utilized as guides throughout the process.
