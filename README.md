@@ -237,7 +237,7 @@ Another configuration pertains to the HC-05 Bluetooth module. To use it, it must
 #define SERIAL3_COM_SPEED 115200
 ```
 
-By default, Bluetooth modules come configured to 9600 baud. To change this, you need to enter the following command in the serial terminal while the module is in AT mode via the button:
+By default, Bluetooth modules come configured to 9600 baud. To change this, you need to enter the following command in the serial terminal while the module is in AT mode :
 ```
 AT+UART=115200,0,0
 ```
