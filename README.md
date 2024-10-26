@@ -163,7 +163,7 @@ The following details explain the purpose of each color used in the wiring conne
 
 ## PCB Creation with EasyEDA
 
-First, I used **EasyEDA Designer** to create the overall schematic, connecting the pins of the respective components with their labels to make it more readable. I divided the design into three parts:
+First, I used **[EasyEDA Designer](https://easyeda.com/es)** to create the overall schematic, connecting the pins of the respective components with their labels to make it more readable. I divided the design into three parts:
 
 1. **Power Supply**: This section includes the circuit necessary to power the Arduino through the **Vin** port, supplying it with 5V.
    
