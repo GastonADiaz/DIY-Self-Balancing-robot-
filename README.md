@@ -139,10 +139,10 @@ In this section, I will describe the electronics used in the project. I utilized
 
 ## Circuit Diagram
 
-I used Wokwi to create a clear and easy-to-understand schematic diagram. Below is the schematic created using Wokwi:
+I used Wokwi to create a clear and easy-to-understand schematic diagram. Below is the schematic created using Wokwi (As not all the components are in Wokwi, I had to add it with [photopea](https://www.photopea.com/)):
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fa456a7a-35cf-47c7-a003-72cface94aaa" alt="Circuit Diagram" width="600"/>
+  <img src="https://github.com/user-attachments/assets/eef1d734-d71a-4e00-83c7-236dbe5ed66c" alt="Circuit Diagram" width="972"/>
   <br />
   <i>Wokwi connection diagram</i>
 </p>
