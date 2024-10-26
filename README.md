@@ -257,7 +257,7 @@ I would like to extend my sincere gratitude to several individuals and organizat
 
 - **National University of Lomas de Zamora, Faculty of Engineering**: For opening the doors to a rich academic environment that has allowed me to pursue my studies and acquire valuable knowledge.
 
-- **Mahowik**: A heartfelt thanks to Mahowik for the fantastic firmware provided in the [Balancing Wii project](https://github.com/mahowik/BalancingWii). Your work has greatly contributed to the success of this project.
+- **Mahowik**: A heartfelt thanks to Mahowik for the fantastic firmware provided in the [BalancingWii](https://github.com/mahowik/BalancingWii). Your work has greatly contributed to the success of this project.
 
 - **To all readers**: I hope you find this project both interesting and useful.
 
