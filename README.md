@@ -241,6 +241,13 @@ By default, Bluetooth modules come configured to 9600 baud. To change this, you 
 ```
 AT+UART=115200,0,0
 ```
+If for any reason you need to modify how the left and right motors are managed, you can do so in the Interrupt Service Routine (ISR) located in Output.cpp. This ISR is responsible for controlling the STEP and DIR signals for both motors.
+
+The ISR is defined as follows:
+```
+ISR(TIMER1_COMPA_vect) {
+}
+```
 
 # Troubleshooting
 
