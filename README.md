@@ -1,15 +1,15 @@
 # Table of Contents
 
-- 🗂️ **1.0 [Introduction](#introduction)**
+- 📝 **1.0 [Introduction](#introduction)**
   - **1.1 [Overview and Objective](#overview-and-objective)**
   - **1.2 [Balancing Robot Working in Real Life](#balancing-robot-working-in-real-life)**
-- 🛠️ **2.0 [Components Used](#components-used)**
+- ⚙️ **2.0 [Components Used](#components-used)**
   - **2.1 [List of Components](#list-of-components)**
   - **2.2 [Principal Tools](#principal-tools)**
   - **2.3 [List of Software Tools](#list-of-software-tools)**
-- :shipit: **3.0 [Mechanical Design](#mechanical-design)**
+- 🛠️ **3.0 [Mechanical Design](#mechanical-design)**
   -  **3.1 [3D Printed Parts](#3d-printed-parts)**
-- 🔌 **4.0 [Electronics](#electronics)**
+- ⚡ **4.0 [Electronics](#electronics)**
   -  **4.1 [Overview](#overview)**
   -  **4.2 [Circuit Diagram](#circuit-diagram)**
   -  **4.3 [Wiring Details](#wiring-details)**
@@ -20,9 +20,9 @@
     - **5.1.2 [Motor Driver Pins](#motor-driver-pins)**
   - **5.2 [Configuration](#configuration)**
   - **5.3 [Application Configuration](#application-configuration)**
-- :exclamation: **6.0 [Troubleshooting](#troubleshooting)**
+- ❗ **6.0 [Troubleshooting](#troubleshooting)**
   -  **6.1 [Common Issues and Solutions](#common-issues-and-solutions)**
-- 🔮 **7.0 [Future Improvements](#future-improvements)**
+- 📈 **7.0 [Future Improvements](#future-improvements)**
   -  **7.1 [Potential Add-ons](#potential-add-ons)**
 - 📚 **8.0 [Bibliography](#bibliography)**
 - 🙏 **9.0 [Acknowledgments](#acknowledgments)**
