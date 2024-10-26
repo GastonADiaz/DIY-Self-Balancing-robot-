@@ -212,7 +212,7 @@ Finally, here is how a printed circuit board would look, both from the top and b
 
 These are the optional settings you can modify for each balancing robot in the `config.h` file:
 
-The first important configuration is the orientation of the MPU. You can change this in this section by setting it to either "ROLL" or "PITCH." In my case, I use "PITCH."
+The first important configuration is the orientation of the MPU6050. You can change this in this section by setting it to either "ROLL" or "PITCH." In my case, I use "PITCH."
 
 ```
 #define CURRENT_AXIS    PITCH       // it is possible to choose ROLL or PITCH axis as current.
