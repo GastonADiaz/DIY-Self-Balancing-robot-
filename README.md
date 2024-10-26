@@ -225,7 +225,7 @@ Another crucial setting for the balancing robot is the adjustment of values base
 #define MAX_TARGET_ANGLE    130    // where 10 = 1 degree, should be <= 15 degree (i.e. <= 150) 
 #define MAX_STEERING        90     // should be <= 100
 
-#define RISE_SPEED_K		1.0f       // this coefficient means how faster robot will be during the auto rising...  should be >= 0.5 but <= 2.0
+#define RISE_SPEED_K        1.0f   // this coefficient means how faster robot will be during the auto rising...  should be >= 0.5 but <= 2.0
 ```
 
 Another configuration pertains to the HC-05 Bluetooth module. To use it, it must be set to a baud rate of 115200, as shown in the following lines of code:
