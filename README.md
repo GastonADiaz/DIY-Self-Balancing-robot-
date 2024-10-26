@@ -161,6 +161,29 @@ The following details explain the purpose of each color used in the wiring conne
 
 ## PCB Creation with EasyEDA
 
+First, I used **EasyEDA Designer** to create the overall schematic, connecting the pins of the respective components with their labels to make it more readable. I divided the design into three parts:
+
+1. **Power Supply**: This section includes the circuit necessary to power the Arduino through the **Vin** port, supplying it with 5V.
+   
+2. **Arduino Nano**: Here, you can find the labels and pins used for the Arduino Nano.
+
+3. **Other Modules**: In the third section, we can see other modules such as the **HC-05**, **MPU6050**, **A4988**, and some male pins that will be used on the board.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/369b3427-a6c5-4c78-a5b3-54cd036ac573" alt="Esquematico General" width="1356"/>
+</p>
+
+Next, we move on to the PCB creation, where we place the components' locations and the soldering paths for better organization when creating it in real life. In the following image, we can see the soldering paths from the top view 🔴 as well as the bottom view 🔵. There are also measurement dimensions in case anyone is interested in replicating it.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/47c0d878-c64d-43a2-8a1f-1f5fe39b1686" alt="PCB Full" width="1082"/>
+</p>
+
+Finally, here is how a printed circuit board would look, both from the top and bottom views. I did not include 3D components because I prefer to show the silkscreen.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a6ce2983-9f52-4f02-8786-072640b37c0d" alt="PCB_Superior_e_Inferior" width="1828"/>
+</p>
 
 ## Actual PCB Board
 
