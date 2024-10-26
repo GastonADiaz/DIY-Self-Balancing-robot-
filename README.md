@@ -193,84 +193,7 @@ Finally, here is how a printed circuit board would look, both from the top and b
   <i>PCB Top and Bottom View</i>
 </p>
 
-# Firmware and Software
-
-## Key Code Sections
-
-# PID Controller Explanation for the Balancing Robot
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d0d2d64f-d56f-4ac9-8e9b-93eef6e6527b" alt="Closed-Loop Diagram of the System with PID" width="800"/>
-  <br />
-  <i>Closed-Loop Diagram of the System with PID</i>
-</p>
-
-## Explanation of the Diagram
-
-**Setpoint (Desired Value):** This is the value that I want the system to reach. In this case, I want to keep the roll angle at 0° for the balancing robot.
-
-**Error \[ e(t) \]:** This is the difference between the desired value (setpoint) and the value measured at the current moment.
-<br />
-I calculate it as:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8e19f12b-d797-4c35-a1e8-8c9fc2ff4ff8" alt="Error e(t)" width="400"/>
-  <br />
-</p>
-
-**PID Controller:** This controller adjusts the control signal based on the error \[ e(t) \] and consists of three components:
-- **Proportional (P):** This depends on the current value of the error. If the error is large, the proportional action will be large.
-- **Integral (I):** This depends on the accumulation of error over time. If the error persists, the integral action will increase to eliminate the residual error.
-- **Derivative (D):** This depends on the rate of change of the error. If the error is changing rapidly, the derivative action will adjust to prevent overshoot.
-
-The output of the PID controller is a combination of these three actions:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ede1709f-e9bb-47e2-9d30-48fe14708ab0" alt="PID Output" width="700"/>
-  <br />
-</p>
-Kp, Ki and Kd are the gains received by the proportional, integral and derivative part.<br /><br />
-
-**Nema 17 Motors:** These motors receive the control signal adjusted by the PID and adjust the rotational speed to try to bring the roll angle to the desired value.
-
-**Measured Value:** This is the current measurement of the system. In my case, it's the roll angle measured by the MPU6050 sensor.
-
-**Feedback:** I feed the measured roll angle back to the PID controller, which calculates the new error and adjusts the control signal accordingly. I repeat this process continuously to keep the system at the desired value.
-
-## Operating Cycle
-
-The entire cycle works as follows:
-1. I measure the current roll angle (Measured Value) using the MPU6050.
-2. I calculate the error \[ e(t) \] between the desired angle (Setpoint) and the measured angle.
-3. The PID controller adjusts the control signal based on the current error, accumulated error, and its rate of change.
-4. I send the adjusted control signal to the Nema 17 motors to correct the roll angle.
-5. The motors change the position, and the MPU6050 sensor measures the angle again, and the cycle repeats.
-
-## Calculations 
-
-**Error Derivative:** To calculate the derivative of the error using finite differences:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1d80682a-84ac-4dd7-aeaf-7163dce9d125" alt="Error Derivative" width="250"/>
-  <br />
-</p>
-where [ Δt ] is the time between each sample:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b9df8ebd-d527-4c52-b9a0-78cb418e4f08" alt="Delta t for Derivative" width="250"/>
-  <br />
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/fa2fc768-635d-4ee3-8184-2891e846149c" alt="Error Integral" width="250"/>
-  <br />
-</p>
-
-**Error Integral:** I sum the integral of the error at each interval over time, accumulating the error.
-<br />
-I calculate the integral as:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/30b46d2e-977b-4d35-9758-673d9ecb2a6c" alt="Current Integral Calculation" width="500"/>
-  <br />
-</p>
-
-## Calibration Procedures
+# Important code explanations
 
 # Troubleshooting
 
@@ -326,13 +249,15 @@ All the references used in the development of this project will be compiled in a
 
 # Acknowledgments
 
-I would like to extend my sincere gratitude to several individuals and organization for this project
+I would like to extend my sincere gratitude to several individuals and organizations for this project.
 
 - **Guillermo Daniel Duarte**: A special thank you to my colleague for his invaluable assistance and support throughout this project. Your help was crucial to its completion.
 
 - **Professor Cristian Leandro Lukasiewicz**: I am deeply grateful to Professor Lukasiewicz for overseeing our Supervised Professional Practice (PPS) and providing guidance and support throughout the process.
 
-- **National University of Lomas de Zamora, Faculty of Engineering**: for opening the doors to a rich academic environment that has allowed me to pursue my studies and acquire valuable knowledge.
+- **National University of Lomas de Zamora, Faculty of Engineering**: For opening the doors to a rich academic environment that has allowed me to pursue my studies and acquire valuable knowledge.
+
+- **Mahowik**: A heartfelt thanks to Mahowik for the fantastic firmware provided in the [Balancing Wii project](https://github.com/mahowik/BalancingWii). Your work has greatly contributed to the success of this project.
 
 - **To all readers**: I hope you find this project both interesting and useful.
 
