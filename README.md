@@ -195,6 +195,53 @@ Finally, here is how a printed circuit board would look, both from the top and b
 
 # Important code explanations
 
+## Connection Pins
+
+### I2C:
+- A4 - SDA
+- A5 - SCL
+
+### Motor Driver Pins:
+- D5 - STEP1 (PORTD 5)
+- D6 - STEP2 (PORTD 6)
+- D7 - DIR1 (PORTD 7)
+- D8 - DIR2 (PORTB 0)
+- D4 - ENABLE (for both)
+
+## Configuration
+
+These are the optional settings you can modify for each balancing robot in the `config.h` file:
+
+The first important configuration is the orientation of the MPU. You can change this in this section by setting it to either "ROLL" or "PITCH." In my case, I use "PITCH."
+
+```
+#define CURRENT_AXIS    PITCH       // it is possible to choose ROLL or PITCH axis as current.
+```
+
+Another crucial setting for the balancing robot is the adjustment of values based on its performance. Comments indicate typical values that usually work well:
+
+```
+#define MAX_SPEED           350    // should be <= 500 // Con 350 va bien 
+#define MAX_TARGET_ANGLE    130    // where 10 = 1 degree, should be <= 15 degree (i.e. <= 150) 
+#define MAX_STEERING        90     // should be <= 100
+
+#define RISE_SPEED_K		1.0f       // this coefficient means how faster robot will be during the auto rising...  should be >= 0.5 but <= 2.0
+```
+
+Another configuration pertains to the HC-05 Bluetooth module. To use it, it must be set to a baud rate of 115200, as shown in the following lines of code:
+
+```
+#define SERIAL0_COM_SPEED 115200
+#define SERIAL1_COM_SPEED 115200
+#define SERIAL2_COM_SPEED 115200
+#define SERIAL3_COM_SPEED 115200
+```
+
+By default, Bluetooth modules come configured to 9600 baud. To change this, you need to enter the following command in the serial terminal while the module is in AT mode via the button:
+```
+AT+UART=115200,0,0
+```
+
 # Troubleshooting
 
 ## Common Issues and Solutions
