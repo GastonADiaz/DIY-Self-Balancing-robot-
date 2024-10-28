@@ -92,7 +92,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 
 | Software             | Description                                                                                              |
 |----------------------|----------------------------------------------------------------------------------------------------------|
-| SolidWorks 2021      | I used SolidWorks 2021 to design the 3D printed parts, model various components, and utilize its toolbox for bolts, nuts, etc. |
+| SolidWorks 2023      | I used SolidWorks 2023 to design the 3D printed parts, model various components, and utilize its toolbox for bolts, nuts, etc. |
 | Wokwi                | I used Wokwi to create and simulate electronic schematics and code, with the added benefit of simulating without needing physical connections. |
 | Arduino IDE          | I used Arduino IDE to write and upload the code to the ATmega328p microcontroller.                      |
 | Easy Eda Designer    | I used Easy Eda Designer for PCB creation and electronic schematics, as it is a very tidy software for designing PCBs. It allows exporting traces for PCB milling or sending the Gerber file for manufacturing. |
@@ -101,7 +101,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 
 # Mechanical Design
 
-In this section, I will describe the mechanical design of the robot, including the 3D printed parts and the overall assembly. The designs were created using SolidWorks 2021, which allowed me to visualize the dimensions needed and plan the hardware required, such as screws and other components. The toolbox in SolidWorks also helped in determining the quantity of parts needed and in assembling the pieces to see how everything fits together.
+In this section, I will describe the mechanical design of the robot, including the 3D printed parts and the overall assembly. The designs were created using SolidWorks 2023, which allowed me to visualize the dimensions needed and plan the hardware required, such as screws and other components. The toolbox in SolidWorks also helped in determining the quantity of parts needed and in assembling the pieces to see how everything fits together.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a7945219-1224-44c9-b3aa-714410899a26" alt="All Parts" width="1080"/>
