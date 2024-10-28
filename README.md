@@ -265,6 +265,60 @@ ISR(TIMER1_COMPA_vect) {
 
 # Application Configuration
 
+As mentioned in another section of this README, we will be using the [EZ-GUI Ground Station application](https://ez-gui-ground-station.uptodown.com/android), which can be downloaded from Google .
+
+The first time you install the application, it will prompt you to enable Bluetooth and location services; make sure to allow both.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1d44ba82-45b7-4f73-91bd-2a73df548ede" alt="Primera imagen Ez-Gui" width="1787"/>
+  <br />
+  <i>first steps to follow</i>
+</p>
+
+Once that is done, go to the three dots in the upper right corner and select "Settings." In this section, choose the Bluetooth module HC-05. After selecting it, click the "Next" button.
+
+Next, select the "Multiwii 2.40" firmware from the list and keep clicking "Next" until you reach the home screen.
+
+Once everything is configured, click the "Connect" button. After connecting, swipe the screen to the right to see the following:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/72a370d4-81cb-4a6a-a44b-0962c7afc284" alt="Menu de opciones" width="550"/>
+  <br />
+  <i>options menu</i>
+</p>
+
+Then, press the "AUX" option and check all the boxes in the following settings. After doing this, click the upload button (the red arrow pointing upwards).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c0b76c9b-18d1-47a3-9771-690a798afe09" alt="AUX" width="500"/>
+  <br />
+  <i>AUX option</i>
+</p>
+
+Next, go back and click on the "PID" button. I recommend using the following values if you are using the same design and wheels as I am, as each robot behaves differently. A smaller robot might require different PID values, just as a larger robot with bigger wheels would.
+
+As before, upload the values to the Arduino using the red arrow button.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4659cbd4-2411-4c49-ab88-111fed0100e8" alt="PID" width="693"/>
+  <br />
+  <i>PID option</i>
+</p>
+
+The last option is for calibrating the MPU6050. For this, the wheels of your balancing robot must be stationary, and the robot should be perfectly vertical on a flat surface. When you press the "Calibration" button, wait about 10 to 15 seconds for it to complete the gyroscope and accelerometer calibration process.
+
+Finally, you can start using your balancing robot by going back from this screen, clicking on the three dots in the top right corner, selecting "Advanced," then "Untested," and finally clicking on "Model Control."
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/58777b89-446d-4be2-9184-ffb7d92b2cc6" alt="joystick" width="437"/>
+  <br />
+  <i>joystick</i>
+</p>
+
+**Note:** To stop the wheels, use [MID] in the first option. Use [ARM] to turn the wheels on.
+
+In the third option, you can also experiment with the different settings available in the application, and you have the joystick to control the balancing robot.
+
 # Troubleshooting
 
 ## Common Issues and Solutions
