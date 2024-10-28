@@ -282,7 +282,7 @@ Next, select the "Multiwii 2.40" firmware from the list and keep clicking "Next"
 Once everything is configured, click the "Connect" button. After connecting, swipe the screen to the right to see the following:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/72a370d4-81cb-4a6a-a44b-0962c7afc284" alt="Menu de opciones" width="550"/>
+  <img src="https://github.com/user-attachments/assets/72a370d4-81cb-4a6a-a44b-0962c7afc284" alt="Menu de opciones" width="250"/>
   <br />
   <i>options menu</i>
 </p>
@@ -290,7 +290,7 @@ Once everything is configured, click the "Connect" button. After connecting, swi
 Then, press the "AUX" option and check all the boxes in the following settings. After doing this, click the upload button (the red arrow pointing upwards).
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c0b76c9b-18d1-47a3-9771-690a798afe09" alt="AUX" width="500"/>
+  <img src="https://github.com/user-attachments/assets/c0b76c9b-18d1-47a3-9771-690a798afe09" alt="AUX" width="400"/>
   <br />
   <i>AUX option</i>
 </p>
@@ -300,7 +300,7 @@ Next, go back and click on the "PID" button. I recommend using the following val
 As before, upload the values to the Arduino using the red arrow button.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4659cbd4-2411-4c49-ab88-111fed0100e8" alt="PID" width="693"/>
+  <img src="https://github.com/user-attachments/assets/4659cbd4-2411-4c49-ab88-111fed0100e8" alt="PID" width="293"/>
   <br />
   <i>PID option</i>
 </p>
@@ -310,7 +310,7 @@ The last option is for calibrating the MPU6050. For this, the wheels of your bal
 Finally, you can start using your balancing robot by going back from this screen, clicking on the three dots in the top right corner, selecting "Advanced," then "Untested," and finally clicking on "Model Control."
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/58777b89-446d-4be2-9184-ffb7d92b2cc6" alt="joystick" width="437"/>
+  <img src="https://github.com/user-attachments/assets/58777b89-446d-4be2-9184-ffb7d92b2cc6" alt="joystick" width="237"/>
   <br />
   <i>joystick</i>
 </p>
