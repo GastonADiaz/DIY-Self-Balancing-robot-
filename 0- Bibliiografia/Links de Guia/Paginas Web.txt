@@ -1,0 +1,2 @@
+1- https://linuxhint.com/power-esp32-battery/#1
+2- https://www.airspayce.com/mikem/arduino/AccelStepper/
