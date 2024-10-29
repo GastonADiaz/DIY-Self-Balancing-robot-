@@ -133,7 +133,9 @@ In this section, I will describe the mechanical design of the robot, including t
    This image shows the overall assembly created in SolidWorks. It combines all the 3D printed parts, demonstrating how they fit together and providing a complete view of the robot's mechanical structure.
 
 <p align="center">
-  <img src="URL_TO_ALL_PARTS_IMAGE" alt="All Parts" width="500"/>  
+  <img src="https://github.com/user-attachments/assets/dbe53415-d6da-4f78-8388-d2b25a19e6d6" alt="All Parts" width="652"/>  
+  <br />
+  <i>Rendered in SolidWorks with PhotoView 360</i>
 </p>
 
 # Electronics
