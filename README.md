@@ -1,8 +1,9 @@
 # Table of Contents
 
 - 📝 **1.0 [Introduction](#introduction)**
-  - **1.1 [Overview and Objective](#overview-and-objective)**
-  - **1.2 [Balancing Robot Working in Real Life](#balancing-robot-working-in-real-life)**
+  - **1.1 [Team Members](#Team-Members)**
+  - **1.2 [Overview and Objective](#overview-and-objective)**
+  - **1.3 [Balancing Robot Working in Real Life](#balancing-robot-working-in-real-life)**
 - ⚙️ **2.0 [Components Used](#components-used)**
   - **2.1 [List of Components](#list-of-components)**
   - **2.2 [Principal Tools](#principal-tools)**
@@ -28,6 +29,10 @@
 - 🙏 **9.0 [Acknowledgments](#acknowledgments)**
 
 # Introduction
+
+## Team Members
+<p>👤 <a href="https://github.com/GastonADiaz">Gastón Alejandro Díaz</a></p>
+<p>👤 <a href="https://github.com/GuillermoDuarte888">Guillermo Daniel Duarte</a></p>
 
 ## Overview and Objective
 
