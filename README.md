@@ -143,6 +143,12 @@ In this section, I will describe the mechanical design of the robot, including t
   <i>Rendered in SolidWorks with PhotoView 360</i>
 </p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9b4d1699-f9a6-4d53-9a17-5481fc5844aa" width="1080"/>
+  <br />
+  <i>Assembly animation made with solidworks</i>
+</p>
+
 # Electronics
 
 ## Overview
