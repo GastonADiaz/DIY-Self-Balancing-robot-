@@ -322,7 +322,8 @@ Finally, you can start using your balancing robot by going back from this screen
   <i>joystick</i>
 </p>
 
-**Note:** To stop the wheels, use [MID] in the first option. Use [ARM] to turn the wheels on.
+>[!NOTE]
+>To stop the wheels, use [MID] in the first option. Use [ARM] to turn the wheels on.
 
 In the third option, you can also experiment with the different settings available in the application, and you have the joystick to control the balancing robot.
 
