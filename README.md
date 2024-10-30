@@ -144,9 +144,9 @@ In this section, I will describe the mechanical design of the robot, including t
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9b4d1699-f9a6-4d53-9a17-5481fc5844aa" width="1080"/>
+  <img src="https://github.com/user-attachments/assets/acec698c-1eb9-4018-804b-2ad3fd16df8d" width="1080"/>
   <br />
-  <i>Assembly animation made with solidworks</i>
+  <i>Assembly animation made with SolidWorks</i>
 </p>
 
 # Electronics
