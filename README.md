@@ -213,6 +213,14 @@ Finally, here is how a printed circuit board would look, both from the top and b
   <i>PCB Top and Bottom View</i>
 </p>
 
+In the following GIF, you can see the components and the 3D PCB layout that were created in EasyEDA. It also features functionalities such as changing the color of the board and the option to hide or show the components, among other capabilities. This representation is essentially our actual board, but with a perforated design.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3aea02c9-984b-4930-b648-dd633ecce95c" alt="PCB en vista 3D" width="870"/>
+  <br />
+  <i>PCB visualized in 3D with EasyEDA</i>
+</p>
+
 # Important code explanations
 
 ## Arduino Nano Connection Pins
