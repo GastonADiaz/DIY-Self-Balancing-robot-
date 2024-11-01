@@ -49,7 +49,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 In the first video, you can see the balancing robot in action. It responds to an external force—in this case, my hands—and demonstrates its ability to maintain balance despite this disturbance.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e48c58ea-d48c-48d0-a22d-a0c72d9685f2" alt="first video" width="652"/>  
+  <img src="https://github.com/user-attachments/assets/e48c58ea-d48c-48d0-a22d-a0c72d9685f2" alt="first video" width="400"/>  
   <br />
   <i>First video in real life</i>
 </p>
@@ -57,7 +57,7 @@ In the first video, you can see the balancing robot in action. It responds to an
 In the second video, the balancing robot is shown moving forward, backward, and turning. It is controlled using a mobile application.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ed90cd9e-4bbd-46cb-b7f3-3a0466aa61aa" alt="Second video" width="652"/>  
+  <img src="https://github.com/user-attachments/assets/ed90cd9e-4bbd-46cb-b7f3-3a0466aa61aa" alt="Second video" width="400"/>  
   <br />
   <i>Second video in real life</i>
 </p>
