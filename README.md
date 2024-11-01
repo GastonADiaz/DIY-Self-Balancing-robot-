@@ -54,7 +54,7 @@ In the first video, the balancing robot is shown moving forward, backward, and t
   <i>First video in real life</i>
 </p>
 
-In the second video,you can see the balancing robot in action. It responds to an external force—in this case, my hands—and demonstrates its ability to maintain balance despite this disturbance. 
+In the second video,you can see the balancing robot in action. It responds to an external force (in this case, my hands) and demonstrates its ability to maintain balance despite this disturbance. 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ed90cd9e-4bbd-46cb-b7f3-3a0466aa61aa" alt="Second video" width="400"/>  
