@@ -46,7 +46,7 @@ We would also like to acknowledge the firmware "BalancingWii," which significant
 
 ## Balancing robot working in real life
 
-In the first video, the balancing robot is shown moving forward, backward, and turning. It is controlled using a mobile application.
+In the first video, the balancing robot is shown moving forward, backward, and turning. It is controlled using a mobile application (EZ-GUI Ground Station).
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e48c58ea-d48c-48d0-a22d-a0c72d9685f2" alt="first video" width="400"/>  
